@@ -6,8 +6,8 @@ app = Socks()
 app2 = Socks(prefix="/app2")
 app3 = Socks(prefix="/app3")
 
-app2.registerSubapp(app3)
-app.registerSubapp(app2)
+app2.register_subapp(app3)
+app.register_subapp(app2)
 
 
 @app.route("/", methods=["GET", "POST"])

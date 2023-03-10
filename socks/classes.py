@@ -114,6 +114,11 @@ class Socks:
 
         self.appPath = getAppRunDir()
 
+        self.register_subapp = self.registerSubapp
+        self.calculate_routes = self.calculateRoutes
+        self.error_handler = self.errorHandler
+        self.get_error_page = self.getErrorPage
+
     def __str__(self) -> str:
         return f"<Socks version={__version__} name={self.name}>"
 
